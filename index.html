@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <div class="wrapper">
-        <div id="first-row">
-            <button id="ac" class="special-btn"></button>
-            <button id="plus-minus" class="special-btn"></button>
-            <button id="modulus" class="special-btn"></button>
-            <button id="division" class="operator-btn"></button>
+    <main class="wrapper">
+        <div class="container">
+            <div class="screen">
+                <p>0</p>
+            </div>
+            <table id="table">
+                <tbody>
+                    <tr id="first-row">
+                        <td id="ac" class="special-td">AC</button>
+                        <td id="plus-minus" class="special-td">+/-</button>
+                        <td id="modulus" class="special-td">%</button>
+                        <td id="division" class="operator-td">/</button>
+                    </tr>
+                    <tr id="second-row">
+                        <td id="seven" class="operand-td">7</td>
+                        <td id="eight" class="operand-td">8</td>
+                        <td id="nine" class="operand-td">9</td>
+                        <td id="multiplication" class="operator-td">X</td>
+                    </tr>
+                    <tr id="third-row">
+                        <td id="four" class="operand-td">4</td>
+                        <td id="five" class="operand-td">5</td>
+                        <td id="six" class="operand-td">6</td>
+                        <td id="minus" class="operator-td">-</td>
+                    </tr>
+                    <tr id="fourth-row">
+                        <td id="one" class="operand-td">1</td>
+                        <td id="two" class="operand-td">2</td>
+                        <td id="three" class="operand-td">3</td>
+                        <td id="plus" class="operator-td">+</td>
+                    </tr>
+                    <tr id="fifth-row">
+                        <td id="zero" class="operand-td" colspan="2">0</td>
+                        <td id="dot" class="operand-td">.</td>
+                        <td id="equals" class="equals-td">=</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div id="second-row">
-            <button id="seven" class="operand-btn"></button>
-            <button id="eight" class="operand-btn"></button>
-            <button id="nine" class="operand-btn"></button>
-            <button id="multiplication" class="operator-btn"></button>
-        </div>
-        <div id="third-row">
-            <button id="four" class="operand-btn"></button>
-            <button id="five" class="operand-btn"></button>
-            <button id="six" class="operand-btn"></button>
-            <button id="minus" class="operator-btn"></button>
-        </div>
-        <div id="fourth-row">
-            <button id="one" class="operand-btn"></button>
-            <button id="two" class="operand-btn"></button>
-            <button id="three" class="operand-btn"></button>
-            <button id="plus" class="operator-btn"></button>
-        </div>
-        <div id="fifth-row">
-            <button id="zero" class="operand-btn"></button>
-            <button id="dot" class="operand-btn"></button>
-            <button id="equals" class="equals-btn"></button>
-        </div>
-    </div>
+    </main>
+    <script src="./main.js" type="text/javascript"></script>
 </body>
 </html>
